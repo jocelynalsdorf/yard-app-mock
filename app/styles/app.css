@@ -1,5 +1,7 @@
 body {
 	padding-top: 120px;
+	height: 100%;
+
 }
 
 
@@ -19,7 +21,9 @@ footer {
 	background-color: #8AC453;
   border-color: #8AC453;
   color: #666c78;
-  margin-top: 40px;
+  margin-top: 45px;
+
+  width: 100%;
 }
 .btn-stretch {
 	width: 100%;
@@ -42,4 +46,16 @@ footer {
 .form-heading {
 	text-align: center;
 	color: #EA523A;
+}
+
+.feature-home {
+	height:300px;
+}
+
+.panel-body {
+	height: 300px;
+}
+
+.listings {
+	min-height:600px;
 }
