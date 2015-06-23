@@ -59,3 +59,28 @@ footer {
 .listings {
 	min-height:600px;
 }
+
+.listing-info-panel {
+	min-height:650px;
+}
+
+.listing-map-panel {
+	height: 250px;
+}
+.caro-solo {
+	height: 340px;
+
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	display: block;
+  width: 100%;
+  height: 340px;
+  border-radius:5px;
+}
+
+.image-header {
+	padding-bottom: 3px;
+	font-size:24px;
+}
+

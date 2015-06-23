@@ -10,7 +10,7 @@ Router.map(function() {
 	this.resource('listings', function(){
 		this.resource('new-listing');
 	});
-	this.resource('listing', function(){
+	this.resource('listing', {path: 'listings/:id'}, function(){
 		this.resource('new-map');
 	});
 });
