@@ -82,5 +82,16 @@ footer {
 .image-header {
 	padding-bottom: 3px;
 	font-size:24px;
+	text-transform: capitalize;
+	text-align: center;
 }
 
+.glyphicon-tree-deciduous, .glyphicon-tent {
+	font-size:30px;
+}
+ul {
+	list-style: none;
+}
+li a {
+	color:  #F7BC3E;
+}
