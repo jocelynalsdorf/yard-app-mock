@@ -1,0 +1,45 @@
+body {
+	padding-top: 120px;
+}
+
+
+.navbar-inverse {
+  background-color: #8AC453;
+  border-color: #8AC453;
+  height:100px;
+  font-size:30px;
+  padding-top:22px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #666c78;
+  font-size: 60px;
+}
+footer {
+	background-color: #8AC453;
+  border-color: #8AC453;
+  color: #666c78;
+  margin-top: 40px;
+}
+.btn-stretch {
+	width: 100%;
+}
+
+.btn-primary {
+	background-color: #EA523A;
+	border: #EA523A;
+}
+
+.btn-primary:active {
+	background-color: #F7BC3E;
+	border: #F7BC3E;
+}
+
+.btn-primary:hover {
+	background-color: #F7BC3E;
+}
+
+.form-heading {
+	text-align: center;
+	color: #EA523A;
+}
