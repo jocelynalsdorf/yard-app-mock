@@ -97,6 +97,10 @@ li a {
 	color:  #F7BC3E;
 }
 
+.btn-wide {
+	width:48%;
+	margin-right:3px;
+}
 .control-group.form-inline:nth-child(odd) {
   float: right;
 }

@@ -1,3 +1,103 @@
+{{#if isEditing}}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+    <h3 class="form-heading">Edit Your Yard Listing</h3>
+      <form>
+        <div class="form-group">
+          <label for="name" >Enter a name for your Yard:</label>
+          {{input value=model.name id="name" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="ownerName">Enter the yard owner's name:</label>
+          {{input value=model.ownerName id="ownerName" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="addNum">Street Number:</label>
+          {{input value=model.addNum id="addNum" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="addStreet">Street:</label>
+          {{input value=model.addStreet id="addStreet" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="addCity">City:</label>
+          {{input value=model.addCity id="addCity" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="addState">State abbreviation in all caps:</label>
+          {{input value=model.addState id="addState" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="addZip">Zip code of yard:</label>
+          {{input value=model.addZip id="addZip" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description of your yard:</label>
+          {{textarea value=model.description id="description" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price per night(USD):</label>
+          {{input value=model.price id="price" class="form-control"}}
+        </div>
+
+        <div class="control-group form-inline">
+          <label for="toilet">Toilet available?:</label>
+          {{view "select" content=toilets value=model.toilet}}
+        </div>
+
+        <div class="control-group form-inline">
+          <label for="shower">Shower available?:</label>
+          {{view "select" content=showers value=model.shower}}
+        </div>
+
+        <div class="control-group form-inline">
+          <label for="outlet">Electricity available?:</label>
+          {{view "select" content=outlets value=model.outlet}}
+        </div>
+
+        <div class="control-group form-inline">
+          <label for="pet">Pets allowed?:</label>
+          {{view "select" content=pets value=model.pet}}
+        </div>
+
+        <div class="form-group">
+          <label for="image1">Image URL:</label>
+          {{input value=model.image1 id="image1" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image2">Image URL:</label>
+          {{input value=model.image2 id="image2" class="form-control"}}
+        </div>
+
+
+        <div class="form-group">
+          <label for="image3">Image URL:</label>
+          {{input value=model.image3 id="image3" class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image4">Image URL:</label>
+          {{input value=model.image4 id="image4" class="form-control"}}
+        </div>
+
+        <button class="btn btn-primary btn-stretch" {{action 'save'}}>Submit</button>
+        
+      </form>
+      </div>
+    </div>
+</div>
+{{else}}
+
 <div class="container listing-solo">
 	<div class="row">
 
@@ -20,8 +120,12 @@
               <hr>
               
               <h4 class="listing-head">Price:</h4><br>
-              <span class="listing-details"><span class="listing-bold">Price/night: </span>${{model.price}}</span><br>
+              <span class="listing-details"><span class="listing-bold">Price/night: </span>${{model.price}}</span>
+              <br>
+              <br>
 
+            <button class="btn btn-primary btn-wide" {{action 'edit'}}>Edit Listing</button>
+            <button class="btn btn-primary btn-wide" {{action 'delete' model.id}}>Delete Listing</button>
             </div><!-- end of descriptionl-list-body-div -->
           </div><!-- end of panel-body div -->
         </div><!-- end of panel-default div -->
@@ -93,3 +197,4 @@
 		</div><!-- end of col-7 -->
 	</div><!--end of row -->
 </div><!-- end of solo listing container -->
+{{/if}}

@@ -1,6 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  toilets: ['yes', 'no'],
+  showers: ['yes', 'no'],
+  outlets: ['yes', 'no'],
+  pets: ['yes', 'no'],
   isEditing: false,
   needs: ['map'],
   actions: {
@@ -28,6 +32,7 @@ export default Ember.Controller.extend({
       listing.set('image4', this.get('model.image4'));
       listing.save();
       this.set('isEditing', false);
+      this.transitionToRoute('listings')
     },
     delete: function() {
       var listing = this.get('model');

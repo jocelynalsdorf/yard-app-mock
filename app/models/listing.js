@@ -9,6 +9,7 @@ export default DS.Model.extend({
   addState: DS.attr('string'),
   addZip: DS.attr('string'),
   description: DS.attr('string'),
+  price: DS.attr('string'),
   toilet: DS.attr('string'),
   shower: DS.attr('string'),
   outlet: DS.attr('string'),
