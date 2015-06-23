@@ -17,6 +17,10 @@ export default Ember.Controller.extend({
       listing.set('addState', this.get('model.addState'));
       listing.set('addZip', this.get('model.addZip'));
       listing.set('description', this.get('model.description'));
+      listing.set('toilet', this.get('model.toilet'));
+      listing.set('shower', this.get('model.shower'));
+      listing.set('outlet', this.get('model.outlet'));
+      listing.set('pet', this.get('model.pet'));
       listing.set('image1', this.get('model.image1'));
       listing.set('image2', this.get('model.image2'));
       listing.set('image3', this.get('model.image3'));

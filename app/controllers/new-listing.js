@@ -1,6 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  toilets: ['yes', 'no'],
+  showers: ['yes', 'no'],
+  outlets: ['yes', 'no'],
+  pets: ['yes', 'no'],
   actions: {
     addListing: function() {
       var newListing = this.store.createRecord('listing', {
@@ -12,6 +16,10 @@ export default Ember.Controller.extend({
         addState: this.get('addState'),
         addZip: this.get('addZip'),
         description: this.get('description'),
+        toilet: this.get('toilet'),
+        shower: this.get('shower'),
+        outlet: this.get('outlet'),
+        pet: this.get('pet'),
         image1: this.get('image1'),
         image2: this.get('image2'),
         image3: this.get('image3'),
@@ -28,6 +36,7 @@ export default Ember.Controller.extend({
         addState:'',
         addZip: '',
         description:'',
+        toilet: 'yes',
         image1: '',
         image2: '',
         image3: '',

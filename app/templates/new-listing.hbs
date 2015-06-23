@@ -16,17 +16,17 @@
       <span class="form-instructions">Carefully enter the address per instructions</span>
       <br>
       <div class="form-group">
-        <label for="addNum">Street Number of yard address:</label>
+        <label for="addNum">Street Number:</label>
         {{input value=addNum id="addNum" class="form-control"}}
       </div>
 
       <div class="form-group">
-        <label for="addStreet">Street name of yard address:</label>
+        <label for="addStreet">Street:</label>
         {{input value=addStreet id="addStreet" class="form-control"}}
       </div>
 
       <div class="form-group">
-        <label for="addCity">State abbreviation in all caps:</label>
+        <label for="addCity">City:</label>
         {{input value=addCity id="addCity" class="form-control"}}
       </div>
 
@@ -45,6 +45,25 @@
         {{textarea value=description id="description" class="form-control"}}
       </div>
 
+      <div class="control-group form-inline">
+        <label for="toilet">Toilet available?:</label>
+        {{view "select" content=toilets value=toilet}}
+      </div>
+
+      <div class="control-group form-inline">
+        <label for="shower">Shower available?:</label>
+        {{view "select" content=showers value=shower}}
+      </div>
+
+      <div class="control-group form-inline">
+        <label for="outlet">Electricity available?:</label>
+        {{view "select" content=outlets value=outlet}}
+      </div>
+
+      <div class="control-group form-inline">
+        <label for="pet">Pets allowed?:</label>
+        {{view "select" content=pets value=pet}}
+      </div>
 
       <div class="form-group">
         <label for="image1">Image URL:</label>

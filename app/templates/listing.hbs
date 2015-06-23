@@ -5,11 +5,24 @@
 			<div class="panel panel-default text-center">
           <div class="panel-body listing-info-panel">
             <span class="glyphicon glyphicon-tree-deciduous"></span> <span class="glyphicon glyphicon-tent"></span><span class="glyphicon glyphicon-tree-deciduous"></span>
-            <h3 class="text-capitalize">All Info For {{model.name}}</h3>
-            <p>Owner Name: {{model.ownerName}}</p>
-            <p>Description: {{model.description}}</p>
-            <p>Address: {{model.addNum}} {{model.addStreet}} {{model.addCity}}, {{model.addState}}</p>
-           
+            <div class="description-list-body">
+              <h2 class="text-capitalize listing-head">{{model.name}}</h2>
+              <p><span class="listing-bold">Owner Name: </span>{{model.ownerName}}</p>
+              <p><span class="listing-bold">Description: </span>{{model.description}}</p>
+              <p><span class="listing-bold">Address: </span>{{model.addNum}} {{model.addStreet}} {{model.addCity}}, {{model.addState}}</p>
+
+              <hr>
+              <h4 class="listing-head">Amenities:</h4><br>
+  	          <span class="listing-details"><span class="listing-bold">Toilet: </span>{{model.toilet}}</span><br>
+  	          <span class="listing-details"><span class="listing-bold">Shower: </span>{{model.shower}}</span><br>
+  	          <span class="listing-details"><span class="listing-bold">Electrical outlet: </span>{{model.outlet}}</span><br>
+  	          <span class="listing-details"><span class="listing-bold">Pets allowed: </span>{{model.pet}}</span><br> 
+              <hr>
+              
+              <h4 class="listing-head">Price:</h4><br>
+              <span class="listing-details"><span class="listing-bold">Price/night: </span>{{model.price}}</span><br>
+              
+            </div><!-- end of descriptionl-list-body-div -->
           </div><!-- end of panel-body div -->
         </div><!-- end of panel-default div -->
 		</div><!-- end of col-5 -->
